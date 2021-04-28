@@ -7,8 +7,8 @@ app.use('/', (req, res,next) => {
     next()
 })
 
-app.use('/add-product', (req, res, next) => {
-    console.log('In another middleware!')
+app.use('/users', (req, res, next) => {
+    console.log('In users middleware!')
     res.send('<h1>Add product</h1>')
 })
 
@@ -17,4 +17,4 @@ app.use('/', (req, res, next) => {
     res.send('<h1>Hello from Express</h1>')
 })
 
-app.listen(4000)
+app.listen(3000)
